@@ -38,6 +38,7 @@ export class PinConfirmationPage implements OnInit {
     if (this.pin.length === 4) {
       return;
     }
+    this.vibrateWhenTyping();
     this.pin += pin;
   }
 
