@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-input  type="text" placeholder="Username"></ion-input>
+  <ion-input placeholder="Password"></ion-input>
+  <ion-button (click)="onClick()">
+    Login
+  </ion-button>
+  <a routerLink="/pin" routerDirection="forward">
+    <img src='../../assets/home_res/pin_code.png'  />
+ </a>
+ 
+  <img src='../../assets/home_res/finger_print.png'  (click)="showFingerprintDialog()"/>
+
+</ion-content>

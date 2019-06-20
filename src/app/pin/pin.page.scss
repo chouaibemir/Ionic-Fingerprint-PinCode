@@ -1,0 +1,24 @@
+.radio-pin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.radio-padding{
+    padding:20px;
+}
+
+ion-icon {
+    &.big {
+      width: 35px;
+      height: 35px;
+    }
+	
+    &.bigger {
+      width: 100px;
+      height: 100px;
+    }
+	
+    &.blue {
+      color: rgb(0, 102, 255);
+    }
+}

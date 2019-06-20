@@ -1,0 +1,113 @@
+<ion-content padding>
+  <div text-center *ngIf="!ShowPin">
+    
+     <label *ngIf="Pin">Pin entered is {{pin}}</label>
+     
+     
+  </div>
+<h6 text-center margin-vertical>{{ pagetitle }}</h6>
+
+
+    <ion-grid class="radio-pin">
+  <ion-row>
+      <ion-col>
+          <div *ngIf="pin.length==0">               
+              <ion-icon class="big blue" src="assets/radio-button-off.svg"></ion-icon>
+          </div>
+        </ion-col>
+       
+    <ion-col>
+    <div *ngIf="pin.length>0">
+        <ion-icon class="big blue" src="assets/radio-button-on.svg"></ion-icon>
+    </div>
+  </ion-col>
+  <ion-col>
+    <div *ngIf="pin.length>1">
+        <ion-icon class="big blue" src="assets/radio-button-on.svg"></ion-icon>
+    </div>
+  </ion-col>
+  <ion-col>
+    <div *ngIf="pin.length>2">
+        <ion-icon class="big blue" src="assets/radio-button-on.svg"></ion-icon>
+    </div>
+  </ion-col>
+  <ion-col>
+    <div *ngIf="pin.length>3">
+        <ion-icon class="big blue" src="assets/radio-button-on.svg"></ion-icon>
+    </div>
+  </ion-col>
+  
+</ion-row>
+
+    </ion-grid>
+
+
+
+
+  <div>
+    <ion-grid text-center>
+      <ion-row>
+        <ion-col>
+          <ion-button fill="outline" (click)="handleInput('1')">1</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button fill="outline" (click)="handleInput('2')">2</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button fill="outline" (click)="handleInput('3')">3</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button fill="outline" (click)="handleInput('4')">4</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button fill="outline" (click)="handleInput('5')">5</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button fill="outline" (click)="handleInput('6')">6</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button fill="outline" (click)="handleInput('7')">7</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button fill="outline" (click)="handleInput('8')">8</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button fill="outline" (click)="handleInput('9')">9</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+
+        </ion-col>
+        <ion-col>
+          <ion-button fill="outline" (click)="handleInput('0')">0</ion-button>
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button (click)="handleInput('clear')">Clear</ion-button>
+        </ion-col>
+        <ion-col>
+
+        </ion-col>
+        <ion-col>
+          <ion-button (click)="okAction()">OK</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div>
+      <ion-grid text-center>
+    
+      <img src='../../assets/home_res/finger_print.png'   height='30' width='30' (click)="showFingerprintDialog()"/>
+   
+   </ion-grid>
+  </div>
+</ion-content>

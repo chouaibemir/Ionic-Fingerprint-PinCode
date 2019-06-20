@@ -1,0 +1,7 @@
+{
+  "name": "figerprint-aio",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
